@@ -1,0 +1,12 @@
+# FractureLens AI — Machine Learning Pipeline Dependencies
+# Used for dataset preparation, training, ONNX export, and evaluation in scripts/
+
+torch>=2.0.0
+torchvision>=0.15.0
+onnx>=1.14.0
+onnxruntime>=1.16.0
+pandas>=2.0.0
+numpy>=1.24.0
+pillow>=10.0.0
+requests>=2.31.0
+tqdm>=4.66.0

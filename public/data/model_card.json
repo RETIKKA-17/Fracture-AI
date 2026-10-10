@@ -1,0 +1,42 @@
+{
+  "model_architecture": "ResNet-18 (ImageNet Pretrained)",
+  "task": "Binary Wrist Fracture Detection",
+  "dataset": "GRAZPEDWRI-DX (Medical University of Graz / Figshare CC BY 4.0)",
+  "class_mapping": {
+    "0": "No Fracture Detected",
+    "1": "Fracture Suspected"
+  },
+  "training_epochs": 10,
+  "best_epoch": 10,
+  "validation_metrics": {
+    "accuracy": 0.6153846153846154,
+    "f1_score": 0.7222222222222222,
+    "sensitivity": 0.9285714285714286,
+    "specificity": 0.25
+  },
+  "onnx_model_path": "/models/wrist_model.onnx",
+  "onnx_size_mb": 42.62796401977539,
+  "input_dimensions": [
+    1,
+    3,
+    224,
+    224
+  ],
+  "preprocessing": {
+    "resolution": [
+      224,
+      224
+    ],
+    "channels": 3,
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  }
+}
